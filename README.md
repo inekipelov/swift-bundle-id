@@ -1,10 +1,6 @@
 # BundleID
 
-`BundleID` is a small Swift Package that exposes strongly typed bundle
-identifiers backed by `Tagged`.
-
-The repository and package identity stay `swift-bundle-id`, while the framework
-you import is `BundleID`.
+`BundleID` is a small Swift Package that exposes strongly typed bundle.
 
 <p align="center">
   <a href="https://swift.org"><img src="https://img.shields.io/badge/Swift-6.0+-F05138?logo=swift&logoColor=white" alt="Swift 6.0+"></a>
@@ -46,13 +42,4 @@ import BundleID
 let bundleID = Bundle.main.bundleID
 print(bundleID)           // BundleID(rawValue: "com.example.my-app")
 print(bundleID.rawValue)  // com.example.my-app
-
-func acceptsBundleID(_ id: BundleID) {
-    print("Tracking bundle:", id.rawValue)
-}
-
-acceptsBundleID(Bundle.main.bundleID)
-
-let isCurrentApp = bundleID == Bundle.main.bundleID
-print(isCurrentApp) // true
 ```
