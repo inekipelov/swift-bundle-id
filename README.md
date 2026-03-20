@@ -1,6 +1,6 @@
 # BundleID
 
-`BundleID` is a small Swift Package that exposes strongly typed bundle.
+`BundleID` exposes strongly typed bundle.
 
 <p align="center">
   <a href="https://swift.org"><img src="https://img.shields.io/badge/Swift-6.0+-F05138?logo=swift&logoColor=white" alt="Swift 6.0+"></a>
@@ -31,9 +31,6 @@ Then add `BundleID` to your target dependencies:
 ```
 
 ## Usage
-
-`BundleID` wraps Foundation's `Bundle.bundleIdentifier`, which is a `String?`
-defined by the `CFBundleIdentifier` key in a bundle's Info.plist.
 
 ```swift
 import Foundation
