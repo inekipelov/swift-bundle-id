@@ -29,14 +29,3 @@ Add the package to your `Package.swift` dependencies:
 ```swift
 .package(url: "https://github.com/inekipelov/swift-bundle-id.git", from: "0.1.0")
 ```
-
-Then add `BundleID` to your target dependencies:
-
-```swift
-.target(
-    name: "YourTarget",
-    dependencies: [
-        "BundleID"
-    ]
-)
-```
