@@ -11,6 +11,17 @@
   <a href="https://developer.apple.com/visionos/"><img src="https://img.shields.io/badge/visionOS-1.0+-000000?logo=apple" alt="visionOS 1.0+"></a>
 </p>
 
+## Usage
+
+```swift
+import Foundation
+import BundleID
+
+let bundleID = Bundle.main.bundleID
+print(bundleID)           // BundleID(rawValue: "com.example.my-app")
+print(bundleID.rawValue)  // com.example.my-app
+```
+
 ## Installation
 
 Add the package to your `Package.swift` dependencies:
@@ -28,15 +39,4 @@ Then add `BundleID` to your target dependencies:
         "BundleID"
     ]
 )
-```
-
-## Usage
-
-```swift
-import Foundation
-import BundleID
-
-let bundleID = Bundle.main.bundleID
-print(bundleID)           // BundleID(rawValue: "com.example.my-app")
-print(bundleID.rawValue)  // com.example.my-app
 ```
